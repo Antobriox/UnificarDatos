@@ -1,0 +1,2 @@
+2024-09-04 11:18:41,246 - Proceso de unificación completado exitosamente.
+2024-09-04 11:27:52,615 - Proceso de unificación completado y datos guardados exitosamente.

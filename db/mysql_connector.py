@@ -4,3 +4,4 @@ def fetch_mysql_data(connection):
     data = cursor.fetchall()
     connection.close()
     return data
+  
