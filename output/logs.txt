@@ -1,14 +1,1 @@
-2024-09-04 11:18:41,246 - Proceso de unificaciï¿½n completado exitosamente.
-2024-09-04 11:27:52,615 - Proceso de unificaciï¿½n completado y datos guardados exitosamente.
-2024-09-05 10:24:42,182 - Proceso de unificación completado y datos guardados exitosamente en MongoDB.
-2024-09-05 10:27:57,864 - Proceso de unificación completado y datos guardados exitosamente en MongoDB.
-2024-09-05 10:32:55,117 - Proceso de unificación completado y datos guardados exitosamente en MongoDB.
-2024-09-05 10:45:03,361 - Iniciando procesamiento por lotes.
-2024-09-05 10:45:03,718 - Proceso completado.
-2024-09-05 10:45:14,919 - Iniciando procesamiento por lotes.
-2024-09-05 10:45:15,177 - Proceso completado.
-2024-09-05 10:46:11,077 - Iniciando procesamiento por lotes.
-2024-09-05 10:46:11,346 - Proceso completado.
-2024-09-05 10:47:39,040 - Iniciando procesamiento por lotes.
-2024-09-05 10:47:39,796 - Proceso completado.
-2024-09-05 10:52:42,455 - Proceso de unificación completado y datos guardados exitosamente en MongoDB.
+2024-09-05 11:02:35,759 - Proceso de unificación completado y datos guardados exitosamente en MongoDB.
