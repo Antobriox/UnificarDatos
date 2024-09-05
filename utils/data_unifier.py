@@ -1,15 +1,30 @@
-def unify_data(mysql_data, mongo_data):
+def unify_data(mysql_data_vino12, mysql_data_vino34, mysql_data_vino5):
     unified_data = []
-    for mysql_row in mysql_data:
-        for mongo_row in mongo_data:
-            # Aquí accedemos a la cédula que está en la posición 2 de la tupla de MySQL
-            if mysql_row[2] == mongo_row["numero_telefono"]:  # Índice 2 para la cédula
+    
+    # Primero unificamos los datos de vino12 con los de vino5 usando nombre_vino como clave
+    for vino12_row in mysql_data_vino12:
+        nombre_vino_vino12 = vino12_row[0]
+        color = vino12_row[1]
+
+        for vino5_row in mysql_data_vino5:
+            nombre_vino_vino5 = vino5_row[0]
+            porcentaje_alchol = vino5_row[1]
+
+            if nombre_vino_vino12 == nombre_vino_vino5:
                 unified_data.append({
-                    "nombre": mysql_row[0],  # Índice 0 para el nombre
-                    "apellido": mysql_row[1],  # Índice 1 para el apellido
-                    "cedula": mysql_row[2],  # Índice 2 para la cédula
-                    "fecha_nacimiento": mongo_row["fecha_nacimiento"],  # Clave corregida
-                    "direccion": mongo_row["direccion"],
-                    "numero_telefono": mongo_row["numero_telefono"]  # Clave corregida
+                    "nombre_vino": nombre_vino_vino12,
+                    "color": color,
+                    "porcentaje_alchol": porcentaje_alchol,
+                    "ano": None  # Año se llenará después
                 })
+
+    # Ahora unificamos con los datos de vino34 usando porcentaje_alchol como clave
+    for vino34_row in mysql_data_vino34:
+        porcentaje_alchol = vino34_row[0]
+        ano = vino34_row[1]
+
+        for unified_row in unified_data:
+            if unified_row["porcentaje_alchol"] == porcentaje_alchol:
+                unified_row["ano"] = ano
+
     return unified_data
