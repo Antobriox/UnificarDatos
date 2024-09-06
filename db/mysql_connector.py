@@ -7,7 +7,7 @@ def fetch_mysql_data_vino12(connection):
 
 def fetch_mysql_data_vino34(connection):
     cursor = connection.cursor()
-    cursor.execute("SELECT porcentaje_alchol, ano FROM vino34")
+    cursor.execute("SELECT porcentaje_alchol, año FROM vino34")
     data = cursor.fetchall()
     connection.close()
     return data

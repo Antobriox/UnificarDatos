@@ -11,8 +11,8 @@ from utils.data_unifier import unify_data
 from utils.logger import setup_logger
 
 def save_unified_data_to_mongo(connection, unified_data):
-    db = connection["unificacion_vino"]  # Actualizado para reflejar la base de datos correcta
-    collection = db["vino_unificados"]  # Actualizado para reflejar la colección correcta
+    db = connection["unificacion_vino"]  
+    collection = db["vino_unificados"]  
     
     try:
         collection.insert_many(unified_data)
